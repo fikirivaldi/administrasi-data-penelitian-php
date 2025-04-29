@@ -1,0 +1,22 @@
+/* mengatur warna backgroud dan padding pada tag body bagian atas agar form tidak menempel diatas */
+body {
+  background: #383a3d;
+  padding-top: 10vh;
+}
+
+/* mengatur warna backgroud form */
+form {
+  background: #fff;
+}
+
+/* mengatur border dan padding class form-container */
+.form-container {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #17a2b8 !important; /* Warna bg-info */
+  border-color: #17a2b8 !important; /* Border color to match bg-info */
+  color: white !important; /* Warna teks */
+}

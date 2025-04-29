@@ -1,0 +1,10 @@
+CREATE TABLE users ( id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, email
+varchar(50) NOT NULL , name varchar(70) NOT NULL, username varchar(50) NOT NULL,
+password varchar(255) NOT NULL, image varchar(255) ); CREATE TABLE user_details
+( id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, jurusan varchar(100) NOT NULL,
+universitas varchar(100) NOT NULL, alamat varchar(100) NOT NULL, jenis_kelamin
+ENUM('P','L'), FOREIGN KEY (id) REFERENCES users(id) ); CREATE TABLE records (
+id INT PRIMARY KEY AUTO_INCREMENT, judul varchar(50) NOT NULL, author
+varchar(50) NOT NULL, tahun int(4) NOT NULL, deskripsi text NOT NULL, file
+varchar(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+
